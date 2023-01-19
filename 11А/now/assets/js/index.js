@@ -24,7 +24,6 @@ setInterval(() => {
     nowTable.render(days[currentDay])
   }
   
-  console.log(currentRow)
 
   if (currentRow !== Table.checkTimes(nowTable.times, getMinutes())) { // Reload row
     currentRow = Table.checkTimes(nowTable.times, getMinutes())
