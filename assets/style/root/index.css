@@ -70,6 +70,10 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+main .main {
+  width: 100%;
+  min-height: 100%;
+}
 
 footer {
   position: relative;
@@ -92,6 +96,7 @@ footer .footer__top {
   grid-row: 1/2;
   width: 100%;
   height: 50px;
+  fill: #000;
 }
 footer .footer {
   padding: 20px 20px 0 20px;
@@ -255,6 +260,9 @@ footer .footer__copyright {
     -ms-grid-columns: 1fr !important;
     grid-template-columns: 1fr !important;
         grid-template-areas: "logo" "cl" "nl" "sl" "cr" !important;
+  }
+  .footer__logo {
+    padding: 30px 0 !important;
   }
   .footer__logo a {
     font-size: 20vw !important;

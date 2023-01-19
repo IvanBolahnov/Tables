@@ -18,7 +18,36 @@ let tables = {
   sunday: new Table(document.querySelector(".table__wrapper--sunday"), "table--sunday", ["№", "Время", "Урок", "Преподаватель", "Кабинет"]),
 }
 
+
 for (day in tables) {
   console.log(days[day])
   tables[day].render(days[day])
 }
+
+let getMinutes = () => {
+  let date = new Date()
+  return date.getHours() * 60 + date.getMinutes()
+}
+
+let getDay = () => {
+  let date = new Date()
+  return date.getDay()
+}
+
+let currentDay = getDay()
+let currentRow = tables[day]
+
+// setInterval(() => {
+//   if (currentDay !== getDay()) { // Reload day
+//     currentDay = getDay()
+//     nowTable.render(days[currentDay])
+//   }
+  
+//   console.log(currentRow)
+
+//   if (currentRow !== Table.checkTimes(nowTable.times, getMinutes())) { // Reload row
+//     currentRow = Table.checkTimes(nowTable.times, getMinutes())
+//     nowTable.setActiveRow(currentRow)
+//   }
+
+// }, 1000);

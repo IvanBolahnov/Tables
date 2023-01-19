@@ -14,11 +14,16 @@
 .table__wrapper {
   width: 100%;
   max-width: 1440px;
-  overflow: auto;
   padding: 10px 20px 0 20px;
 }
 .table__wrapper .table-now {
+  display: block;
+  width: 100%;
+  overflow: auto;
   border-collapse: collapse;
+}
+.table__wrapper .table-now tbody {
+  display: block;
   border: solid 1px #999;
   width: -webkit-max-content;
   width: -moz-max-content;

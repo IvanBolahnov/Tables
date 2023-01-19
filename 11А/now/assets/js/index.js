@@ -13,20 +13,21 @@ let getDay = () => {
 let nowTable = new Table(document.querySelector(".table__wrapper"), "table-now", ["№", "Время", "Урок", "Преподаватель", "Кабинет"])
 
 let currentDay = getDay()
-let currentRow = Table.checkTimes(nowTable.times, getMinutes())
-
 nowTable.render(days[currentDay])
+
+let currentRow = Table.checkTimes(nowTable.times, getMinutes())
 nowTable.setActiveRow(currentRow)
-console.log(currentRow)
 
 setInterval(() => {
-  if (currentDay !== getDay()) {
+  if (currentDay !== getDay()) { // Reload day
     currentDay = getDay()
     nowTable.render(days[currentDay])
   }
+  
+  console.log(currentRow)
 
-  if (currentRow !== Table.checkTimes(nowTable.times, getMinutes())) {
-    let currentRow = Table.checkTimes(nowTable.times, getMinutes())
+  if (currentRow !== Table.checkTimes(nowTable.times, getMinutes())) { // Reload row
+    currentRow = Table.checkTimes(nowTable.times, getMinutes())
     nowTable.setActiveRow(currentRow)
   }
 

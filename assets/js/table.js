@@ -28,6 +28,8 @@ class Table {
 
   editCaption (captionContent) {
     let node = document.createTextNode(captionContent)
+    let lastNode = this.caption.childNodes[0]
+    lastNode != undefined ? this.caption.removeChild(lastNode) : undefined
     this.caption.appendChild(node)
     return this.caption
   }
