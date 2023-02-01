@@ -36,18 +36,3 @@ let getDay = () => {
 
 let currentDay = getDay()
 let currentRow = tables[day]
-
-// setInterval(() => {
-//   if (currentDay !== getDay()) { // Reload day
-//     currentDay = getDay()
-//     nowTable.render(days[currentDay])
-//   }
-  
-//   console.log(currentRow)
-
-//   if (currentRow !== Table.checkTimes(nowTable.times, getMinutes())) { // Reload row
-//     currentRow = Table.checkTimes(nowTable.times, getMinutes())
-//     nowTable.setActiveRow(currentRow)
-//   }
-
-// }, 1000);

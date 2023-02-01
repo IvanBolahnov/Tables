@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta rel="manifest" content="manifest.json">
   <title>Tables</title>
   <link rel="stylesheet" href="/Tables/assets/style/fonts/montserrat.css">
   <link rel="stylesheet" href="/Tables/assets/style/root/index.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <link rel="stylesheet" href="assets/style/media.css">
+  <link rel="shortcut icon" href="/Tables/favicon.ico" type="image/x-icon">
+
+
+  <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+  </script>
+  
 </head>
 <body>
   <header>
@@ -27,14 +37,14 @@
     <div class="main">
       <section class="list-main">
         <a class="card" href="11А/now" class="table-all">11А</a>
-        <a class="card" href="11А/now" class="table-all">11Б</a>
-        <a class="card" href="11А/now" class="table-all">10А</a>
-        <a class="card" href="11А/now" class="table-all">10Б</a>
-        <a class="card" href="11А/now" class="table-all">9А</a>
-        <a class="card" href="11А/now" class="table-all">9Б</a>
-        <a class="card" href="11А/now" class="table-all">9В</a>
-        <a class="card" href="11А/now" class="table-all">9Г</a>
-        <a class="card" href="11А/now" class="table-all">9Д</a>
+        <a class="card" href="11Б/now" class="table-all">11Б</a>
+        <a class="card" href="10А/now" class="table-all">10А</a>
+        <a class="card" href="10Б/now" class="table-all">10Б</a>
+        <a class="card" href="9А/now" class="table-all">9А</a>
+        <a class="card" href="9Б/now" class="table-all">9Б</a>
+        <a class="card" href="9В/now" class="table-all">9В</a>
+        <a class="card" href="9Г/now" class="table-all">9Г</a>
+        <a class="card" href="9Д/now" class="table-all">9Д</a>
       </section>
     </div>
     <footer>
@@ -45,43 +55,43 @@
         <div class="footer__class-list list--container">
           <h3 class="footer__class-list--title list__title">Список классов</h3>
           <ul class="footer__class-list--list list">
-            <li><a href="#">11А</a></li>
-            <li><a href="#">11Б</a></li>
-            <li><a href="#">10А</a></li>
-            <li><a href="#">10Б</a></li>
-            <li><a href="#">9А</a></li>
-            <li><a href="#">9Б</a></li>
-            <li><a href="#">9В</a></li>
-            <li><a href="#">9Г</a></li>
-            <li><a href="#">8А</a></li>
-            <li><a href="#">8Б</a></li>
-            <li><a href="#">8В</a></li>
-            <li><a href="#">8Г</a></li>
-            <li><a href="#">7А</a></li>
-            <li><a href="#">7Б</a></li>
-            <li><a href="#">7В</a></li>
-            <li><a href="#">7Г</a></li>
-            <li><a href="#">6А</a></li>
-            <li><a href="#">6Б</a></li>
-            <li><a href="#">6В</a></li>
-            <li><a href="#">6Г</a></li>
-            <li><a href="#">5А</a></li>
-            <li><a href="#">5Б</a></li>
-            <li><a href="#">5В</a></li>
-            <li><a href="#">5Г</a></li>
-            <li><a href="#">4А</a></li>
-            <li><a href="#">4Б</a></li>
-            <li><a href="#">4В</a></li>
-            <li><a href="#">4Г</a></li>
+            <li><a href="/Tables/11А">11А</a></li>
+            <li><a href="/Tables/11Б">11Б</a></li>
+            <li><a href="/Tables/10А">10А</a></li>
+            <li><a href="/Tables/10Б">10Б</a></li>
+            <li><a href="/Tables/9А">9А</a></li>
+            <li><a href="/Tables/9Б">9Б</a></li>
+            <li><a href="/Tables/9В">9В</a></li>
+            <li><a href="/Tables/9Г">9Г</a></li>
+            <li><a href="/Tables/8А">8А</a></li>
+            <li><a href="/Tables/8Б">8Б</a></li>
+            <li><a href="/Tables/8В">8В</a></li>
+            <li><a href="/Tables/8Г">8Г</a></li>
+            <li><a href="/Tables/7А">7А</a></li>
+            <li><a href="/Tables/7Б">7Б</a></li>
+            <li><a href="/Tables/7В">7В</a></li>
+            <li><a href="/Tables/7Г">7Г</a></li>
+            <li><a href="/Tables/6А">6А</a></li>
+            <li><a href="/Tables/6Б">6Б</a></li>
+            <li><a href="/Tables/6В">6В</a></li>
+            <li><a href="/Tables/6Г">6Г</a></li>
+            <li><a href="/Tables/5А">5А</a></li>
+            <li><a href="/Tables/5Б">5Б</a></li>
+            <li><a href="/Tables/5В">5В</a></li>
+            <li><a href="/Tables/5Г">5Г</a></li>
+            <li><a href="/Tables/4А">4А</a></li>
+            <li><a href="/Tables/4Б">4Б</a></li>
+            <li><a href="/Tables/4В">4В</a></li>
+            <li><a href="/Tables/4Г">4Г</a></li>
           </ul>
         </div>
         <div class="footer__logo"><a href="/Tables/">Tables</a></div>
         <div class="footer__nav-list list--container">
           <h3 class="footer__nav-list--title list__title">Навигация</h3>
           <ul class="footer__nav-list--list list">
-            <li><a href="/Tables//">Главная</a></li>
-            <li><a href="/Tables//howinstall">Как установить</a></li>
-            <li><a href="/Tables//api">API</a></li>
+            <li><a href="/Tables/">Главная</a></li>
+            <li><a href="/Tables/howinstall">Как установить</a></li>
+            <li><a href="/Tables/api">API</a></li>
           </ul>
         </div>
         <div class="footer__social-list list--container" list>
@@ -131,7 +141,7 @@
             </a></li>
           </ul>
         </div>
-        <div class="footer__copyright">© Copyright 2022. Ivan Bolahnov</div>
+        <div class="footer__copyright">© Copyright 2023. Ivan Bolahnov</div>
       </div>
     </footer>
   </main>
