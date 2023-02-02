@@ -5,9 +5,8 @@
   "display": "standalone",
   "name": "Tables",
   "orientation": "any",
-  "scope": "https://ivanbolahnov.github.io/Tables/",
   "short_name": "Tables",
-  "start_url": "/",
+  "start_url": "Tables",
   "theme_color": "#000000",
   "categories": [
     "education"
@@ -45,8 +44,8 @@
       "purpose": "any"
     },
     {
-      "src": "icons/512xx512.png",
-      "sizes": "512xx512",
+      "src": "icons/512x512.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     }

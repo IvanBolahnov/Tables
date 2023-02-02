@@ -1,4 +1,26 @@
-// This is the "Offline copy of pages" service worker
+// const staticCacheName = 'tb-v1.0.0'
+
+// const assetUrls = [
+//   "index.html",
+//   "favicon.ico",
+//   ""
+// ]
+
+// self.addEventListener('install', event => {
+//   console.log("install event")
+//   event.waitUntil(
+//     caches.open(staticCacheName).then(cache => cache.addAll(
+//       [
+
+//       ]
+//     ))
+//   )
+// })
+
+// self.addEventListener('activate', event => {
+//   console.log("activate  event")
+// })
+
 
 const CACHE = "pwabuilder-offline";
 
@@ -11,7 +33,7 @@ self.addEventListener("message", (event) => {
 });
 
 workbox.routing.registerRoute(
-  new RegExp('/*'),
+  new RegExp('/Tables/*'),
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: CACHE
   })
