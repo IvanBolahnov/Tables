@@ -6,7 +6,8 @@
   "name": "Tables",
   "orientation": "any",
   "short_name": "Tables",
-  "start_url": "Tables",
+  "id": "/Tables/",
+  "start_url": "/Tables/",
   "theme_color": "#000000",
   "categories": [
     "education"
