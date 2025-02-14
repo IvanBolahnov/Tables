@@ -1,0 +1,36 @@
+.input__wrapper {
+	width: 100%;
+	height: 40px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: rgba(var(--primary02), 0.5);
+	box-shadow: rgba(var(--primary23), 0.5) 0 0 4px -2px;
+	gap: 8px;
+	padding: 8px;
+	border-radius: 8px;
+}
+
+.input__left_icon {
+	width: 24px;
+	height: 24px;
+}
+
+.input {
+	font-size: 18px;
+	font-weight: 100;
+	flex-grow: 1;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.input::placeholder {
+	color: rgba(var(--primary18), 0.8);
+}
+
+.input__wrapper:focus-within {
+	outline: rgba(var(--primary25), 0.5) 1px solid;
+}

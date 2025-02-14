@@ -1,0 +1,6 @@
+@media (max-width: 424px) {
+	.profile_section {
+		align-self: flex-start;
+		padding: 0;
+	}
+}

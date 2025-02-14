@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	outline-offset: 0;
+}
+
+:root {
+	/* --primary-bg: #ffffff;
+	--primary-text: #000000;
+	--primary-bg05: #ffffff80;
+	--primary-text05: #00000080;
+
+	--secondary-bg: #eeeeee;
+	--secondary-text: #777777;
+	--secondary-bg05: #eeeeee80;
+	--secondary-text05: #77777780;
+
+	--contrast-bg: #000000;
+	--contrast-text: #ffffff;
+	--contrast-bg05: #00000080;
+	--contrast-text05: #ffffff80;
+
+	--accent-text: #00b2ff;
+	--accent-bg: #447fff;
+	--accent-bg05: #447fff80;
+	--accent-text05: #00b2ff80;
+
+	--black: #000;
+	--white: #fff;
+
+	--error-text: #bd0000;
+	--error-bg: #ff4747;
+	--success-text: #20be00;
+	--success-bg: #56ff34; */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* --primary-bg: #000000;
+		--primary-text: #ffffff;
+		--primary-bg05: #00000080;
+		--primary-text05: #ffffff80;
+
+		--secondary-bg: #111111;
+		--secondary-text: #aaaaaa;
+		--secondary-bg05: #11111180;
+		--secondary-text05: #aaaaaa80;
+
+		--contrast-bg: #ffffff;
+		--contrast-text: #000000;
+		--contrast-bg05: #ffffff80;
+		--contrast-text05: #00000080;
+
+		--accent-text: #447fff;
+		--accent-bg: #00b2ff;
+		--accent-text05: #447fff80;
+		--accent-bg05: #00b2ff80;
+
+		--error-bg: #bd0000;
+		--error-text: #ff4747;
+		--success-text: #56ff34;
+		--success-bg: #20be00; */
+	}
+}
+
+html {
+	height: 1px;
+	min-height: 100%;
+	width: 100%;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 1rem;
+	background: rgba(var(--primary00), 1);
+	color: rgba(var(--primary25), 1);
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+h2 {
+	font-size: 1.5rem;
+}
+h3 {
+	font-size: 1.25rem;
+}
+
+._subtitle {
+	font-size: 0.75rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+}
+
+body,
+#root {
+	width: 100%;
+	height: 1px;
+	min-height: 100%;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

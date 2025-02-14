@@ -1,0 +1,15 @@
+.already_auth {
+  background: rgba(var(--lockSuccess00), 0.7);
+	color: rgba(var(--primary25), 1);
+	width: 100%;
+	padding: 12px;
+}
+
+.already_auth__back {
+	text-decoration: underline;
+}
+
+.already_auth__back:focus-visible {
+	outline: rgba(var(--primary25), 1) 2px solid;
+  border-radius: 4px;
+}

@@ -1,0 +1,37 @@
+.notifications {
+	list-style: none;
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 12px;
+	padding: 12px;
+	justify-content: center;
+	right: 0;
+}
+
+.notification_success {
+	background: rgba(var(--lockSuccess00), 0.5);
+	border: 1px solid rgba(var(--lockSuccess01), 0.8);
+}
+
+.notification_error {
+	background: rgba(var(--lockError00), 0.5);
+	border: 1px solid rgba(var(--lockError01), 0.8);
+}
+
+.notification_regular {
+	background: rgba(var(--primary04), 0.5);
+	border: 1px solid rgba(var(--secondary05), 0.8);
+}
+
+.notification {
+	padding: 12px;
+	border-radius: 8px;
+	color: var(--primary-text);
+	transition: filter 10s;
+	animation: notificate 3s linear;
+	z-index: 110;
+}

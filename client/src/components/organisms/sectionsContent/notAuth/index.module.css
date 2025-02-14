@@ -1,0 +1,40 @@
+.notAuth {
+	display: flex;
+	flex-direction: column;
+	border-radius: 12px;
+	overflow: auto;
+	width: min(400px, 100%);
+	padding: 12px;
+	gap: 8px;
+}
+
+.notAuth__header {
+	display: flex;
+	overflow: hidden;
+}
+
+.notAuth__header h2 {
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.notAuth__code {
+	display: flex;
+	color: rgba(var(--primary10), 1);
+	justify-content: flex-end;
+}
+
+.notAuth > p > a {
+	color: rgba(var(--secondary14), 1);
+	text-decoration: underline;
+}
+
+@media (max-width: 424px) {
+	.notAuth {
+		width: 100%;
+		align-self: flex-start;
+		border-radius: 0;
+		border: none;
+	}
+}

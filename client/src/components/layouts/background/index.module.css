@@ -1,0 +1,31 @@
+.background {
+	--mouse-x: 0px;
+	--mouse-y: 0px;
+	min-height: calc(100dvh - 50px);
+	background-image: url("/icons/section.background.light.svg");
+	background-position: var(--mouse-x) var(--mouse-y);
+	transition: background-position 2s cubic-bezier(0, 0.05, 0.69, 1.11);
+	background-attachment: fixed;
+	position: relative;
+}
+
+@media (prefers-color-scheme: dark) {
+	.background {
+		background-image: url("/icons/section.background.dark.svg");
+	}
+}
+
+.background::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: linear-gradient(
+		-45deg,
+		rgba(var(--secondary05), 0.5),
+		rgba(var(--primary00), 0.5)
+	);
+	z-index: 1;
+}

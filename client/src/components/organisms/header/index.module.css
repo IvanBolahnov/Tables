@@ -1,0 +1,27 @@
+.header {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	background: rgba(var(--primary01), 1);
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+}
+
+.header__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__wrapper {
+	background: var(--accent-text);
+	width: min(1800px, 100%);
+	padding: 0 12px;
+	display: flex;
+	height: 50px;
+	justify-content: space-between;
+	align-items: center;
+}
