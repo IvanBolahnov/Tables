@@ -1,15 +1,15 @@
-import styles from "./index.module.css"
-import componentStyles from "../../../index.module.css"
+import classNames from "classnames"
 import { FC } from "react"
 import { useForm, SubmitHandler } from "react-hook-form"
-import Button from "../../../molecules/button"
-import { useNavigate } from "react-router"
 import { useDispatch, useSelector } from "react-redux"
-import { userSlice } from "../../../../store/user/user.slice"
+import { useNavigate } from "react-router"
 import { authApi } from "../../../../api/auth"
 import { RootState } from "../../../../store/store"
-import classNames from "classnames"
+import { userSlice } from "../../../../store/user/user.slice"
+import componentStyles from "../../../index.module.css"
 import AlreadyAuth from "../../../molecules/alreadyAuth"
+import Button from "../../../molecules/button"
+import styles from "./index.module.css"
 
 type LoginForm = {
 	email: string

@@ -1,10 +1,10 @@
-import { FC, useEffect, useState } from "react"
-import styles from "./index.module.css"
 import classNames from "classnames"
+import { FC, useEffect, useState } from "react"
 import { Link } from "react-router"
-import { Table, UserOnGroupWithGroups, UserRole } from "../../../api/type"
 import { groupApi } from "../../../api/group"
+import { Table, UserOnGroupWithGroups, UserRole } from "../../../api/type"
 import { STATIC_URL } from "../../../consts"
+import styles from "./index.module.css"
 
 type GroupCardProps = {
 	group: UserOnGroupWithGroups

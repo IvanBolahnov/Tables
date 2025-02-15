@@ -1,8 +1,8 @@
 import { FC } from "react"
-import { BrowserRouter } from "react-router"
 import { Provider } from "react-redux"
-import { store } from "./store/store"
+import { BrowserRouter } from "react-router"
 import Notifications from "./components/organisms/notifications"
+import { store } from "./store/store"
 
 type ProvidersProps = {
 	children: JSX.Element

@@ -6,7 +6,7 @@ import { UserOnGroupWithGroups } from "../../../../api/type"
 import GroupCard from "../../../molecules/groupsCard"
 import { ButtonStyledLink } from "../../../molecules/button"
 import classNames from "classnames"
-import AddIcon from '/public/icons/add_lock.svg?react'
+import AddIcon from "/src/assets/icons/add_lock.svg?react"
 
 const GroupsContent: FC = () => {
 	const [groups, setGroups] = useState<UserOnGroupWithGroups[] | null>()

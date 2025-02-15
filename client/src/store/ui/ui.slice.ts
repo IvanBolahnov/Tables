@@ -11,13 +11,7 @@ export type UiStateType = {
 }
 
 const initialState: UiStateType = {
-	notifications: [
-		{
-			id: 1,
-			type: "regular",
-			message: "string"
-		}
-	]
+	notifications: []
 }
 
 export const uiSlice = createSlice({

@@ -1,6 +1,6 @@
-import styles from "./index.module.css"
 import { FC } from "react"
 import { Link } from "react-router"
+import styles from "./index.module.css"
 
 type AlreadyAuthProps = {
   name: string

@@ -1,9 +1,9 @@
+import { jwtDecode } from "jwt-decode"
 import { useDispatch } from "react-redux"
 import { AccessTokenPayload, authApi } from "./api/auth"
 import Router from "./router"
-import { userSlice } from "./store/user/user.slice"
 import { uiSlice } from "./store/ui/ui.slice"
-import { jwtDecode } from "jwt-decode"
+import { userSlice } from "./store/user/user.slice"
 
 function App() {
 	const dispatch = useDispatch()

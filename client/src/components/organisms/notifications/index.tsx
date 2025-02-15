@@ -1,9 +1,9 @@
+import classNames from "classnames"
 import { FC } from "react"
-import styles from "./index.module.css"
 import { useDispatch, useSelector } from "react-redux"
 import { RootState } from "../../../store/store"
 import { Notification, uiSlice } from "../../../store/ui/ui.slice"
-import classNames from "classnames"
+import styles from "./index.module.css"
 
 type NotificationProps = {
 	notification: Notification

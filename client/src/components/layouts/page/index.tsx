@@ -1,8 +1,8 @@
-import styles from "./index.module.css"
 import { FC } from "react"
-import Header from "../../organisms/header"
 import Footer from "../../organisms/footer"
+import Header from "../../organisms/header"
 import Notifications from "../../organisms/notifications"
+import styles from "./index.module.css"
 
 type PageLayoutProps = {
 	noHeader?: boolean

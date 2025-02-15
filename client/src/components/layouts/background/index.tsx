@@ -1,7 +1,7 @@
-import { FC } from "react"
-import styles from "./index.module.css"
-import SectionLayout from "../section"
 import classNames from "classnames"
+import { FC } from "react"
+import SectionLayout from "../section"
+import styles from "./index.module.css"
 
 type SectionLayoutProps = {
 	children: JSX.Element

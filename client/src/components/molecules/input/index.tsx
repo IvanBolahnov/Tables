@@ -1,6 +1,6 @@
+import classNames from "classnames"
 import { FC, forwardRef } from "react"
 import styles from "./index.module.css"
-import classNames from "classnames"
 
 type InputProps = {
 	children?: React.ReactNode

@@ -1,13 +1,13 @@
-import styles from "./index.module.css"
 import { FC, useEffect, useState } from "react"
 import { useParams } from "react-router"
-import PageLayout from "../../layouts/page"
-import BackgroundLayout from "../../layouts/background"
-import SectionWrapperLayout from "../../layouts/section/sectionWrapper"
 import { groupApi } from "../../../api/group"
 import { Group as GroupType } from "../../../api/type"
+import BackgroundLayout from "../../layouts/background"
+import PageLayout from "../../layouts/page"
+import SectionWrapperLayout from "../../layouts/section/sectionWrapper"
 import Group from "../../organisms/sectionsContent/group"
 import NotFoundPage from "../notFound"
+import styles from "./index.module.css"
 
 const GroupPage: FC = () => {
 	const { groupSlug = "" } = useParams()
@@ -26,7 +26,7 @@ const GroupPage: FC = () => {
 			{group ? (
 				<PageLayout noFooter>
 					<BackgroundLayout>
-						<SectionWrapperLayout>
+						<SectionWrapperLayout className={styles.groups_section}>
 							<Group group={group} />
 						</SectionWrapperLayout>
 					</BackgroundLayout>

@@ -1,8 +1,8 @@
-import styles from "./index.module.css"
 import { FC } from "react"
-import PageLayout from "../../layouts/page"
 import BackgroundLayout from "../../layouts/background"
+import PageLayout from "../../layouts/page"
 import SectionWrapperLayout from "../../layouts/section/sectionWrapper"
+import styles from "./index.module.css"
 
 const TablesPage: FC = () => {
 	return (

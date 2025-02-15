@@ -1,10 +1,10 @@
-import styles from "./index.module.css"
+import classNames from "classnames"
 import { FC } from "react"
 import { Link } from "react-router"
-import PageLayout from "../../layouts/page"
 import BackgroundLayout from "../../layouts/background"
+import PageLayout from "../../layouts/page"
 import SectionWrapperLayout from "../../layouts/section/sectionWrapper"
-import classNames from "classnames"
+import styles from "./index.module.css"
 
 const NotFoundPage: FC = () => {
 	return (

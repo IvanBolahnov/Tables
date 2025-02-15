@@ -10,7 +10,7 @@ import { Link } from "react-router"
 import { UserOnGroupWithGroups } from "../../../../api/type"
 import { uiSlice } from "../../../../store/ui/ui.slice"
 import classNames from "classnames"
-import SettingsIcon from '/public/icons/settings_lock.svg?react'
+import SettingsIcon from "/src/assets/icons/settings_lock.svg?react"
 
 const ProfileContent: FC = () => {
 	const user = useSelector((state: RootState) => state.user)

@@ -1,9 +1,9 @@
-import styles from "./index.module.css"
 import { FC } from "react"
-import PageLayout from "../../../layouts/page"
 import BackgroundLayout from "../../../layouts/background"
+import PageLayout from "../../../layouts/page"
 import SectionWrapperLayout from "../../../layouts/section/sectionWrapper"
 import AuthForm from "../../../organisms/forms/auth"
+import styles from "./index.module.css"
 
 const AuthPage: FC = () => {
 	return (

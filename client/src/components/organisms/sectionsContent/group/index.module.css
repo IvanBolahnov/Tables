@@ -1,12 +1,7 @@
 .group {
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(-45deg, var(--primary-bg05), transparent);
-	backdrop-filter: blur(4px);
-	border: solid 1px var(--contrast-bg05);
-	border-radius: 12px;
 	overflow: hidden;
-	width: min(400px, 100%);
 }
 
 .group > hr {
@@ -91,13 +86,4 @@
 .group__links a:hover,
 .group__links a:focus-visible {
 	background: var(--accent-text);
-}
-
-@media (max-width: 424px) {
-	.group {
-		width: 100%;
-		align-self: flex-start;
-		border-radius: 0;
-		border: none;
-	}
 }

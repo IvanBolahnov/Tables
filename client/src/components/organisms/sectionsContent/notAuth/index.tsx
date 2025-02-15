@@ -1,8 +1,8 @@
-import styles from "./index.module.css"
-import componentStyles from "../../../index.module.css"
+import classNames from "classnames"
 import { FC } from "react"
 import { Link } from "react-router"
-import classNames from "classnames"
+import componentStyles from "../../../index.module.css"
+import styles from "./index.module.css"
 
 type NotAuthProps = {
 	message: string

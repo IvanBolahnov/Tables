@@ -1,7 +1,7 @@
-import { FC } from "react"
-import styles from "./index.module.css"
 import classNames from "classnames"
+import { FC } from "react"
 import { Link, LinkProps } from "react-router"
+import styles from "./index.module.css"
 
 type ButtonProps = {
 	children: React.ReactNode

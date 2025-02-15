@@ -1,10 +1,10 @@
 import { FC } from "react"
-import { Link } from "react-router"
-import styles from "./index.module.css"
 import logo from "/logo.svg"
 import { useSelector } from "react-redux"
+import { Link } from "react-router"
 import { RootState } from "../../../store/store"
 import { HeaderGuestNav, HeaderUserNav } from "./headerNav"
+import styles from "./index.module.css"
 
 const Header: FC = () => {
 	const { isAuth } = useSelector((state: RootState) => state.user)
